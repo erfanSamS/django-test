@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+{% extends "basic_a/base.html" %}
+    {% block body_block %}
+        <h1>this is index!</h1>
+        {{ text|cut:'world' }}
+        {% filter lower %}
+            <h1>MAMAD NABODI BEBINI</h1>
+        {% endfilter %}
+        {{ number }}
+    {% endblock %}
+
